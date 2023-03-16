@@ -1,0 +1,118 @@
+/*! Theme styles. (theme.css) | @author webtitov.ru */
+:root {
+  /* colors */
+  --theme-purple: #A09CDD;
+  --theme-dark-blue: #0066AA;
+  /* else */
+  --website-width: 480px;
+  --padding-h: 24px; /* horizontal padding */
+  --padding-v: 24px; /* vertical padding */
+}
+
+body {
+  background-color: #cccccc;
+  position: relative;
+  overflow-x: hidden;
+}
+
+main {
+  background-color: #FFFFFF;
+  max-width: 480px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.theme-wrapper {
+  padding: var(--padding-v) var(--padding-h);
+  display: grid;
+  align-items: start;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  width: 100%;
+  position: relative;
+  max-width: var(--website-width);
+  margin: 0 auto;
+}
+
+.theme-button {
+  background: #FFAB00;
+  background: -moz-radial-gradient(89.09% 89.09% at 50% 20%, #FFF84A 0%, #FFAB00 100%);
+  background: -webkit-radial-gradient(89.09% 89.09% at 50% 20%, #FFF84A 0%, #FFAB00 100%);
+  background: radial-gradient(89.09% 89.09% at 50% 20%, #FFF84A 0%, #FFAB00 100%);
+  
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  
+  height: 65px;
+  max-width: 278px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  position: relative;
+}
+.theme-button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  bottom: -4px;
+  background-color: #B67A00;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.theme-button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  left: 0;
+  top: 0;
+  background: #FFAB00;
+  background: -moz-radial-gradient(89.09% 89.09% at 50% 20%, #FFF84A 0%, #FFAB00 100%);
+  background: -webkit-radial-gradient(89.09% 89.09% at 50% 20%, #FFF84A 0%, #FFAB00 100%);
+  background: radial-gradient(89.09% 89.09% at 50% 20%, #FFF84A 0%, #FFAB00 100%);
+}
+.theme-button__text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.8;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.04em;
+}
+.theme-button:hover:before {
+  bottom: 0;
+}
